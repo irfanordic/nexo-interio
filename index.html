@@ -13,7 +13,6 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://nexointerio.com/">
 
-
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nexointerio.com/">
     <meta property="og:title" content="Nexo Interio | Modular Kitchens & UPVC Solutions in Payyanur">
@@ -21,20 +20,15 @@
         content="Transform your space with premium modular kitchens, UPVC windows, and glass enclosures in Payyanur. 25 years of excellence.">
     <meta property="og:image" content="assets/images/og-share-image.jpg">
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-
-
 </head>
 
 <body>
-
 
     <header class="site-header" id="top">
         <div class="wrap header-inner">
@@ -52,9 +46,16 @@
 
             <nav class="main-nav" id="mainNav">
                 <a href="#services">Services</a>
+
                 <a href="#why">Why Us</a>
-                <a href="#process">Process</a>
-                <a href="#gallery">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="assets/images/brochure.jpg" download="Nexo-Interio-Brochure" class="nav-brochure">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                    </svg>
+                    Brochure
+                </a>
                 <a href="#contact" class="nav-cta">Get a Quote</a>
             </nav>
 
@@ -63,7 +64,6 @@
             </button>
         </div>
     </header>
-
 
     <section class="hero" style="background-image: url('assets/images/hero.webp');">
         <div class="hero-overlay"></div>
@@ -103,9 +103,6 @@
         </div>
     </section>
 
-
-
-
     <section class="about" id="about">
         <div class="wrap">
             <div class="about-grid">
@@ -132,7 +129,6 @@
         </div>
     </section>
 
-
     <section class="services" id="services">
         <div class="wrap">
             <p class="eyebrow">What We Build</p>
@@ -140,12 +136,13 @@
 
             <div class="build-rows">
 
+                <!-- Row 1: Photo Left (reveal-left), Text Right (reveal-right) -->
                 <article class="build-row">
-                    <div class="build-photo">
+                    <div class="build-photo reveal-left">
                         <img src="assets/images/slid2.jpeg"
                             alt="UPVC sliding doors installed on a balcony by Nexo Interio">
                     </div>
-                    <div class="build-text">
+                    <div class="build-text reveal-right">
                         <span class="service-index">01</span>
                         <h3>UPVC Windows &amp; Doors</h3>
                         <p>Durable, low-maintenance UPVC windows and doors engineered for weather resistance, noise
@@ -161,12 +158,9 @@
                     </div>
                 </article>
 
+                <!-- Row 2: Text Left (reveal-left), Photo Right (reveal-right) -->
                 <article class="build-row build-row--reverse">
-                    <div class="build-photo">
-                        <img src="assets/images/modular-kitchen.jpg"
-                            alt="Modular kitchen with glossy grey cabinets by Nexo Interio">
-                    </div>
-                    <div class="build-text">
+                    <div class="build-text reveal-left">
                         <span class="service-index">02</span>
                         <h3>Modular Kitchen</h3>
                         <p>Kitchens designed around how you cook — premium materials, smart storage, and finishes
@@ -180,13 +174,18 @@
                         <a href="#contact" class="build-cta" data-service="Modular Kitchen">Get a quote for this
                             &rarr;</a>
                     </div>
+                    <div class="build-photo reveal-right">
+                        <img src="assets/images/modular-kitchen.jpg"
+                            alt="Modular kitchen with glossy grey cabinets by Nexo Interio">
+                    </div>
                 </article>
 
+                <!-- Row 3: Photo Left (reveal-left), Text Right (reveal-right) -->
                 <article class="build-row">
-                    <div class="build-photo">
+                    <div class="build-photo reveal-left">
                         <img src="assets/images/bathroom.jpeg" alt="Frameless glass shower enclosure by Nexo Interio">
                     </div>
-                    <div class="build-text">
+                    <div class="build-text reveal-right">
                         <span class="service-index">03</span>
                         <h3>Bathroom Enclosures</h3>
                         <p>Frameless and semi-frameless glass enclosures that keep bathrooms clean, modern, and
@@ -206,26 +205,112 @@
         </div>
     </section>
 
-
     <section class="why" id="why">
-        <div class="wrap why-grid">
-            <div>
+        <div class="wrap">
+            <div class="why-header reveal">
                 <p class="eyebrow">Why Nexo Interio</p>
                 <h2>Reasons homeowners choose us twice.</h2>
+                <p class="why-intro">
+                    We combine 25 years of local fabrication expertise with global material standards to deliver
+                    stress-free interior projects in Payyanur.
+                </p>
             </div>
-            <ul class="why-list">
-                <li>Customized Interior Solutions</li>
-                <li>Premium Quality Materials</li>
-                <li>Modern &amp; Functional Designs</li>
-                <li>Professional Installation Team</li>
-                <li>Affordable Pricing</li>
-                <li>On-Time Project Delivery</li>
-                <li>End-to-End Project Support</li>
-                <li>Customer Satisfaction Guaranteed</li>
-            </ul>
+
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Customized Interior Solutions</h3>
+                    <p>Every layout, storage unit, and window frame is custom designed to match your specific space and
+                        daily routines.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Premium Grade Materials</h3>
+                    <p>We source top-tier UPVC profiles, marine-grade plywood, and hardware from trusted global partners
+                        like Hettich and Häfele.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3>Modern & Functional Designs</h3>
+                    <p>Aesthetic kitchens and frameless glass partitions designed to maximize usable room area and
+                        natural lighting.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>In-House Installation Team</h3>
+                    <p>Our experienced local craftsmen handle fabrication and site assembly directly with zero reliance
+                        on sub-contractors.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Transparent Pricing</h3>
+                    <p>Clear line-item estimations upfront with fair market pricing and no hidden charges halfway
+                        through your build.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>On-Time Project Delivery</h3>
+                    <p>Structured milestones and dedicated project supervision ensure your handover date is met without
+                        unnecessary delays.</p>
+                </div>
+            </div>
+            <div class="why-cta-banner reveal">
+                <div class="cta-banner-content">
+                    <h3>Need Expert Guidance on Your Space?</h3>
+                    <p>Get a free in-home consultation and a detailed project estimate from our senior team.</p>
+                </div>
+                <a href="contact.html" class="btn-call-pulse">
+                    <span>Request a Call Back</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
-
 
     <section class="process" id="process">
         <div class="wrap">
@@ -264,7 +349,6 @@
         </div>
     </section>
 
-
     <section class="gallery" id="gallery">
         <div class="wrap">
             <p class="eyebrow">Recent Work</p>
@@ -283,10 +367,17 @@
                 <div class="gallery-item"><img src="assets/images/slidigw.jpeg"
                         alt="Kitchen storage and drawer hardware" loading="lazy"></div>
             </div>
-
+            <div class="see-more-container">
+                <a href="gallery.html" class="btn-see-more">
+                    See More Projects
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
-
 
     <section class="contact" id="contact">
         <div class="wrap contact-grid">
@@ -330,15 +421,90 @@
             </form>
         </div>
     </section>
+    <section class="associates-section">
+        <div class="associates-container">
+            <h2 class="associates-title">Our Associates</h2>
 
+            <div class="associates-grid">
+                <div class="partner-card">
+                    <img src="assets/images/hettich.png" alt="Hettich" loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/images/hafele.jpg" alt="Häfele" loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/images/ebco.png" alt="Ebco" loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/images/faber.jpeg" alt="Faber" loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Bosch-logo.svg" alt="Bosch"
+                        loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/images/kaff.jpeg" alt="Kaff" loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/images/greenlam.png" alt="Greenlam" loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/images/century.png" alt="Century Prowud" loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/images/merino.jpeg" alt="Merino Laminates" loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/images/rehau.png" alt="Rehau" loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/images/simta.jpeg" alt="Simta Astrix" loading="lazy">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/images/glass.png" alt="Guardian Glass" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="site-footer">
-        <div class="wrap footer-inner">
-            <span class="brand-word">NEXO <em>Interio</em></span>
-            <p>Designing Spaces. Creating Experiences. — Since 25 Years.</p>
-            <p class="footer-copy">&copy; <span id="year"></span> Nexo Interio, Payyanur. All rights reserved.</p>
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h3 class="footer-logo">NEXO <span>Interio</span></h3>
+                <p class="brand-desc">Crafting refined, timeless interior spaces that harmonize form, function, and
+                    modern elegance.</p>
+                <p class="copyright">&copy; <span id="year"></span> Nexo Interio. All rights reserved.</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#gallery">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">The Studio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4 class="footer-title">Studio</h4>
+                <address class="contact-details">
+                    <p>Edat, Payyanur</p>
+                    <p>Kannur, Kerala</p>
+                    <p class="contact-link"><a href="mailto:info@nexointerio.com">info@nexointerio.com</a></p>
+                    <p class="contact-link"><a href="tel:+919999999999">+91 9999999999</a></p>
+                </address>
+            </div>
         </div>
     </footer>
+
+    <a href="https://wa.me/919999999999?text=Hello!%20I%20would%20like%20to%20inquire%20about%20your%20services."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path
+                d="M16 2a13 13 0 0 0-11 20l-2 7 7-2a13 13 0 1 0 6-25zm0 24a11 11 0 0 1-5.6-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4A11 11 0 1 1 16 26zm6-8.2c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6 0a8 8 0 0 1-2.4-1.5 8.9 8.9 0 0 1-1.7-2.1c-.2-.3 0-.5.2-.6l.4-.5a1.8 1.8 0 0 0 .2-.4.4.4 0 0 0 0-.4c-.1-.2-.7-1.7-1-2.3s-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 5 18.7 18.7 0 0 0 1.9.7 4.6 4.6 0 0 0 2.1.1 3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.5c-.1-.1-.4-.2-.7-.3z" />
+        </svg>
+    </a>
 
     <script src="script.js"></script>
 </body>
