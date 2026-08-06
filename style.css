@@ -13,7 +13,7 @@
     --radius: 10px;
 }
 
-/* --- Reset & Global Base --- */
+
 *,
 *::before,
 *::after {
@@ -92,7 +92,7 @@ section[id] {
     margin-bottom: 0.6em;
 }
 
-/* --- Scroll Reveal Animations --- */
+
 .reveal {
     opacity: 0;
     transform: translateY(28px);
@@ -137,7 +137,7 @@ section[id] {
     }
 }
 
-/* --- Buttons --- */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -184,7 +184,7 @@ section[id] {
     transform: translateY(-2px);
 }
 
-/* --- Site Header & Navigation --- */
+
 .site-header {
     position: fixed;
     top: 0;
@@ -335,7 +335,6 @@ section[id] {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* --- Hero Section --- */
 .hero {
     position: relative;
     min-height: 92vh;
@@ -409,9 +408,9 @@ section[id] {
 .hero-stats>div {
     flex: 1;
     padding-left: 32px;
-    /* Adds inner spacing from the left line */
+
     padding-right: 32px;
-    /* Adds inner spacing before the right line */
+
     border-right: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -435,7 +434,7 @@ section[id] {
     font-size: 0.85rem;
 }
 
-/* --- Page Banner --- */
+
 .page-banner {
     padding: 120px 0 60px;
     background-color: #111111;
@@ -462,7 +461,7 @@ section[id] {
     color: #111111;
 }
 
-/* --- About Section --- */
+
 .about {
     padding: 90px 0 70px;
 }
@@ -535,7 +534,7 @@ section[id] {
     color: var(--copper);
 }
 
-/* --- Services / What We Build --- */
+
 .services {
     padding: 70px 0 30px;
     background: #fff;
@@ -633,7 +632,7 @@ section[id] {
     border-color: var(--blue);
 }
 
-/* --- Why Choose Us --- */
+
 .why {
     padding: 80px 0;
     background: var(--ink);
@@ -679,7 +678,7 @@ section[id] {
     background: var(--copper);
 }
 
-/* --- Process Section --- */
+
 .process {
     padding: 90px 0;
     background: #fff;
@@ -732,7 +731,7 @@ section[id] {
     color: #3c4657;
 }
 
-/* --- Video Works Section --- */
+
 .video-works-section {
     padding: 80px 0;
     background-color: #f9f9f9;
@@ -754,7 +753,7 @@ section[id] {
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
-    /* 16:9 Aspect Ratio */
+
     height: 0;
     background-color: #000;
 }
@@ -784,7 +783,7 @@ section[id] {
     color: #666;
 }
 
-/* --- Gallery Sections --- */
+
 .gallery,
 .photo-gallery-section {
     padding: 80px 0;
@@ -865,7 +864,7 @@ section[id] {
     opacity: 1;
 }
 
-/* --- Contact Section & Form --- */
+
 .contact {
     padding: 90px 0;
     background: #fff;
@@ -941,7 +940,7 @@ section[id] {
     margin: 0;
 }
 
-/* --- Our Associates Section --- */
+
 .associates-section {
     background-color: #ffffff;
     padding: 60px 20px 80px;
@@ -992,7 +991,7 @@ section[id] {
     transform: scale(1.05);
 }
 
-/* --- Footer --- */
+
 .site-footer {
     background-color: #121212;
     color: #e0e0e0;
@@ -1075,7 +1074,8 @@ section[id] {
     color: #a0a0a0;
 }
 
-/* --- Floating WhatsApp CTA --- */
+
+
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -1104,7 +1104,7 @@ section[id] {
     fill: #ffffff;
 }
 
-/* --- Consolidated Media Queries --- */
+
 @media (max-width: 900px) {
 
     .about-grid,
@@ -1341,7 +1341,7 @@ section[id] {
     transform: scale(1.15);
 }
 
-/* Why Us Section */
+
 .why {
     background-color: #0c1322;
     color: #ffffff;
@@ -1429,7 +1429,7 @@ section[id] {
     margin: 0;
 }
 
-/* Call Request Banner */
+
 .why-cta-banner {
     margin-top: 56px;
     padding: 36px 40px;
@@ -1456,7 +1456,7 @@ section[id] {
     margin: 0;
 }
 
-/* Pulsing Animated Button */
+
 .btn-call-pulse {
     display: inline-flex;
     align-items: center;
@@ -1478,7 +1478,7 @@ section[id] {
     background-color: #2563eb;
     transform: translateY(-2px);
     animation: none;
-    /* Smooth hover transition takes over */
+
     box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.5);
 }
 
@@ -1490,7 +1490,7 @@ section[id] {
     transform: translateX(4px);
 }
 
-/* Continuous Subtle Pulsing Animation */
+
 @keyframes pulse-glow {
     0% {
         box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.6);
@@ -1505,7 +1505,7 @@ section[id] {
     }
 }
 
-/* Mobile Responsiveness */
+
 @media (max-width: 768px) {
     .why-cta-banner {
         flex-direction: column;
@@ -1519,11 +1519,7 @@ section[id] {
     }
 }
 
-/* ==========================================================================
-   CONTACT PAGE STYLES
-   ========================================================================== */
 
-/* Page Hero Banner */
 .page-hero {
     background: linear-gradient(rgba(12, 19, 34, 0.85), rgba(12, 19, 34, 0.95)),
         url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80') center/cover;
@@ -1551,7 +1547,7 @@ section[id] {
     text-decoration: none;
 }
 
-/* Contact Grid Section */
+
 .contact-section {
     background-color: #0c1322;
     padding: 80px 0;
@@ -1563,7 +1559,7 @@ section[id] {
     gap: 50px;
 }
 
-/* Contact Info Card */
+
 .contact-info h2,
 .contact-form-wrap h2 {
     font-size: 1.8rem;
@@ -1606,7 +1602,7 @@ section[id] {
     font-size: 1.2rem;
 }
 
-/* Contact Form */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -1660,11 +1656,11 @@ section[id] {
     transform: translateY(-2px);
 }
 
-/* Map Section */
+
 .map-section {
     line-height: 0;
     filter: grayscale(20%) invert(90%) hue-rotate(180deg);
-    /* Modern dark map aesthetic */
+
     opacity: 0.9;
     transition: filter 0.3s ease, opacity 0.3s ease;
 }
@@ -1674,7 +1670,7 @@ section[id] {
     opacity: 1;
 }
 
-/* Responsive Layout */
+
 @media (max-width: 868px) {
     .contact-grid {
         grid-template-columns: 1fr;
@@ -1689,7 +1685,7 @@ section[id] {
     }
 }
 
-/* --- Page Hero Banner --- */
+
 .page-hero {
     background: linear-gradient(rgba(12, 19, 34, 0.85), rgba(12, 19, 34, 0.95)),
         url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80') center/cover;
@@ -1717,7 +1713,7 @@ section[id] {
     text-decoration: none;
 }
 
-/* --- Video Works Section --- */
+
 .video-works-section {
     padding: 80px 0;
     background-color: #f9f9f9;
@@ -1739,7 +1735,7 @@ section[id] {
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
-    /* 16:9 Aspect Ratio */
+
     height: 0;
     background-color: #000;
 }
@@ -1768,7 +1764,7 @@ section[id] {
     color: #666;
 }
 
-/* --- Gallery Grid Layout & Overlays --- */
+
 .photo-gallery-section {
     padding: 80px 0;
     background: #f4f5f7;
@@ -1835,7 +1831,7 @@ section[id] {
     opacity: 1;
 }
 
-/* --- Lightbox Modal Overlay --- */
+
 .lightbox-modal {
     position: fixed;
     inset: 0;
@@ -1897,7 +1893,7 @@ section[id] {
     color: #3b82f6;
 }
 
-/* --- Gallery Media Queries --- */
+
 @media (max-width: 900px) {
     .gallery-grid-custom {
         grid-template-columns: repeat(2, 1fr);
@@ -1910,7 +1906,7 @@ section[id] {
     }
 }
 
-/* --- Header Brochure Button --- */
+
 .nav-brochure {
     display: inline-flex;
     align-items: center;
@@ -1934,7 +1930,7 @@ section[id] {
     color: #ffffff !important;
 }
 
-/* --- Brochure Section Styles --- */
+
 .brochure-section {
     padding: 70px 0;
     background-color: #ffffff;
@@ -1970,7 +1966,7 @@ section[id] {
     margin-top: 35px;
 }
 
-/* --- Brochure Responsive Styles --- */
+
 @media (max-width: 768px) {
     .brochure-grid {
         grid-template-columns: 1fr;

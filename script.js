@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Dynamic Footer Year
+
     const yearEl = document.getElementById('year');
     if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
     }
 
-    // 2. Header Scroll Effect
+
     const siteHeader = document.querySelector('.site-header');
     if (siteHeader) {
         const toggleHeaderStyle = () => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', toggleHeaderStyle, { passive: true });
     }
 
-    // 3. Stagger Indices for Grid/List Items
+
     const staggerGroups = [
         '.gallery-grid .gallery-item',
         '.why-list li',
@@ -30,19 +30,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Attach Reveal Classes to Additional Elements Dynamically
     const fadeUpTargets = document.querySelectorAll(
         '.about-grid, .why-list li, .process-list li, .gallery-item, .partner-card, .hero-stats > div'
     );
     fadeUpTargets.forEach(el => el.classList.add('reveal'));
 
-    // 5. Reusable Intersection Observer for Scroll Up & Down Animations
     const allRevealTargets = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
 
     if ('IntersectionObserver' in window) {
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                // Toggle is-visible based on intersection state (re-triggers when scrolling up/down)
+
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
                 } else {
@@ -59,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         allRevealTargets.forEach(el => el.classList.add('is-visible'));
     }
 
-    // 6. Pre-select Service in Contact Form from CTA
+
     document.querySelectorAll('.build-cta[data-service]').forEach(link => {
         link.addEventListener('click', () => {
             const select = document.querySelector('#contactForm select[name="service"]');
@@ -67,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 7. Navigation Toggle for Mobile
+
     const navToggle = document.getElementById('navToggle');
     const mainNav = document.getElementById('mainNav');
 
@@ -85,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 8. Contact Form WhatsApp Redirection
+
     const WHATSAPP_NUMBER = '919999999999';
     const contactForm = document.getElementById('contactForm');
     const formNote = document.getElementById('formNote');
