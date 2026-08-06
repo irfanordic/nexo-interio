@@ -1,5 +1,45 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+
+const siteHeader = document.querySelector('.site-header');
+const toggleHeaderStyle = () => {
+    siteHeader.classList.toggle('is-scrolled', window.scrollY > 40);
+};
+toggleHeaderStyle();
+window.addEventListener('scroll', toggleHeaderStyle, { passive: true });
+
+
+const revealTargets = document.querySelectorAll(
+    '.about-grid, .build-row, .why-list li, .process-list li, .gallery-item'
+);
+revealTargets.forEach(el => el.classList.add('reveal'));
+
+
+document.querySelectorAll('.gallery-item').forEach((el, i) => {
+    el.style.setProperty('--i', i);
+});
+
+if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    revealTargets.forEach(el => revealObserver.observe(el));
+} else {
+    revealTargets.forEach(el => el.classList.add('is-visible'));
+}
+
+document.querySelectorAll('.build-cta[data-service]').forEach(link => {
+    link.addEventListener('click', () => {
+        const select = document.querySelector('#contactForm select[name="service"]');
+        if (select) select.value = link.dataset.service;
+    });
+});
+
 const navToggle = document.getElementById('navToggle');
 const mainNav = document.getElementById('mainNav');
 
@@ -15,8 +55,8 @@ mainNav.querySelectorAll('a').forEach(link => {
     });
 });
 
-// WhatsApp 
-const WHATSAPP_NUMBER = '919999999999';
+
+const WHATSAPP_NUMBER = '91999999999';
 const contactForm = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
 
